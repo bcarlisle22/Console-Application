@@ -1,30 +1,59 @@
-print("Hey there! I have a super cute fun and interactibe story to share with you!")
+print("Hey there! I have a super cute fun and interactive story to share with you!")
 print("First, I need to ask a few questions. ")
 print("This story is going to be based on you and a few of your favorite things")
 print("Don't forget, to submit your reply, simply press 'enter.' Let's get started! ")
 
+print("\n")
 
 input("Press 'enter' to continue ")
 
+print("\n")
+
 userName= input ('What is your name?  ')
+while(len(userName) == 0):
+    userName = input("Please enter your name: ")
+
+print("\n")
+
 if userName.lower() == "brianna": 
-   print(userName + "? That name sounds familar! ")
+   print(userName + "? I love that name! ")
 else:
-   print("\n Hello, " + userName + " Nice to meet you!")
-
-print("\n")
-dogName=input (" \n Chose a name for the yorkie:  ")
-majorCity=input ("\n What is your favorite major city?  ")
-resturantName= input ("\n What is the name of your favorite resturant?  ")
-favoriteDessert=input ("\n What is your favorite dessert?  ")
-favoriteNumber=input ("\n What is your favorite number?  ")
-
-
-
+   print("Hello, " + userName + " Nice to meet you!")
 
 print("\n")
 
-print("Woohoo, this is gonna be fun! Let's get started! ")
+dogName=input ("Chose a name for the yorkie:  ")
+while(len(dogName) == 0):
+    dogName = input("Enter a name: ")
+
+print("\n")
+
+majorCity=input ("What is your favorite major city?  ")
+while(len(majorCity) == 0):
+    majorCity = input("Enter a city name: ")
+
+print("\n")
+
+resturantName= input ("What is the name of your favorite resturant? ")
+while(len(resturantName) == 0):
+    resturantName = input ("Enter a resturant name: ")
+
+print("\n")
+
+favoriteDessert=input ("What is your favorite dessert?  ")
+while(len(favoriteDessert) == 0):
+    favoriteDessert = input ("Enter a dessert: ")
+
+print("\n")
+
+favoriteNumber=input ("What is your favorite number?  ")
+while(len(favoriteNumber) ==0):
+    favoriteNumber = input("Enter your favorite number: ")
+
+
+print("\n")
+
+print("This is gonna be fun! Let's get started! ")
 
 print("This is a story about a yorkie named " + dogName +". ")
 
