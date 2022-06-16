@@ -23,6 +23,7 @@ typingPrint("Don't forget, to submit your reply, simply press 'enter'. ")
 
 typingPrint("\n")
 
+
 typingPrint("Let's get started!")
 
 typingPrint("\n")
@@ -69,7 +70,7 @@ while(len(favoriteDessert) == 0):
 typingPrint("\n")
 
 favoriteNumber=input ("What is your favorite number?  ")
-while(len(favoriteNumber) ==0):
+while not favoriteNumber.isdigit():
     favoriteNumber = input("Whoops. I don't think I got that. Enter your favorite number: ")
 
 
@@ -124,7 +125,7 @@ typingPrint(dogName +" was so excited to get here, she forgot to decide what ser
 print("\n")
 
 nailService= input("Should she get a pawicure or a massage? Type 'P' or 'M': ")
-while nailService.lower() != "P" and nailService.lower() != "M":
+while nailService.upper() != "P" and nailService.upper() != "M":
     nailService = input("Whoops. I don't think I got that. Please type 'P' or 'M': ")
 
 if nailService.upper() == 'P':
@@ -139,7 +140,7 @@ else:
     typingPrint("She had to hurry run home before her owner got back.")
 
 Method = input("Should the yorkie run home or stay at the salon? Type 'R' or 'S': ")
-while Method.lower() != "R" and Method.lower() != "S":
+while Method.upper() != "R" and Method.upper() != "S":
     Method = input("Whoops. I don't think I got that. Please type 'R' or 'S': ")
 
     
@@ -159,6 +160,13 @@ if nailService.upper() == 'P' and  Method == 'S':
    print("\n")
    typingPrint(userName+ " explained it to her on the way home. ")
    typingPrint("The silly dog didn't need to sneak out to the spa because her owner was going to suprise her with a trip to the spa the next day.")
+elif nailService == "P" and Method == "R":
+    typingPrint(dogName + " decided to try to run home anyways. She was a block away from her home when Animal Rescue spotted her and started chasing her. ")
+    typingPrint("She ran into her front yard just as " + userName + " pulled into the driveway.")
+    typingPrint(userName + " spotted Animal rescue chancing " + dogName + " . )
+    typingPrint("'Hey! This is my dog! '" + userName + " said. Animal Rescue apologized and promptly left.")
+    typingPrint("The dog and her owner went inside the house.")
+    typingPrint("That's the first and last time " + dogName + " is going to leave the house without her owner. ")
 else: 
    print("\n")
    typingPrint(dogName+ " ran home as fast as she could before her owner got back. ")
