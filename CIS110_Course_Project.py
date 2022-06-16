@@ -33,7 +33,7 @@ typingPrint("\n")
 
 userName= input ('What is your name?  ')
 while(len(userName) == 0):
-    userName = input("Please enter your name: ")
+    userName = input("Whoops. I don't think I got that. Please enter your name: ")
 
 typingPrint("\n")
 
@@ -46,31 +46,31 @@ typingPrint("\n")
 
 dogName=input ("Chose a name for the yorkie:  ")
 while(len(dogName) == 0):
-    dogName = input("Enter a name: ")
+    dogName = input("Whoops. I don't think I got that. Enter a name: ")
 
 typingPrint("\n")
 
 majorCity=input ("What is your favorite major city?  ")
 while(len(majorCity) == 0):
-    majorCity = input("Enter a city name: ")
+    majorCity = input("Whoops. I don't think I got that. Enter a city name: ")
 
 typingPrint("\n")
 
 resturantName= input ("What is the name of your favorite resturant? ")
 while(len(resturantName) == 0):
-    resturantName = input ("Enter a resturant name: ")
+    resturantName = input ("Whoops. I don't think I got that. Enter a resturant name: ")
 
 typingPrint("\n")
 
 favoriteDessert=input ("What is your favorite dessert?  ")
 while(len(favoriteDessert) == 0):
-    favoriteDessert = input ("Enter a dessert: ")
+    favoriteDessert = input ("Whoops. I don't think I got that. Enter a dessert: ")
 
 typingPrint("\n")
 
 favoriteNumber=input ("What is your favorite number?  ")
 while(len(favoriteNumber) ==0):
-    favoriteNumber = input("Enter your favorite number: ")
+    favoriteNumber = input("Whoops. I don't think I got that. Enter your favorite number: ")
 
 
 typingPrint("\n")
@@ -80,42 +80,52 @@ typingPrint("Let's start the story! ")
 print("\n")
 print("------------------------------------------------------------")
 print("\n")
+print("\n")
 
 typingPrint("This is a story about a yorkie named " + dogName +". ")
 
 typingPrint("\n")
 
 typingPrint(dogName + " was left alone for a night while her owner, " +  userName + ", went out.")
-typingPrint(" Today was " + dogName + "'s opportunity to have a night out herself. So, she decided to roam the streets of " + majorCity)
-typingPrint(" to find this new pet spa she heard about. ")
+print("\n")
+typingPrint("Tonight was " + dogName + "'s opportunity to have a night out herself. So, she decided to roam the streets of " + majorCity)
+typingPrint(" to visit a new pet spa she heard about. ")
 typingPrint(dogName + " waited a while after her owner had left, then she ran out of the doggy door and out into the busy streets.")
 
 print("\n")
 
 typingPrint("While walking down the sidewalk, " + dogName + " arrived at " + resturantName + " . And she couldn't help noticing all the ")
-typingPrint(favoriteDessert + "s being made. 'Yummmmm', She thought as she ran to the window and starred. ")
+typingPrint(favoriteDessert + "s being made.'Yummmmm', She thought as she ran to the window and starred. ")
 
 print("\n")
 
 sneakIntoResturant = input("Should " + str(dogName) + " sneak into the resturant ? Type 'yes' or 'no': ")
+while(len(sneakIntoResturant) ==0):
+    sneakIntoResturant = input("Whoops. I don't think I got that. Please type 'yes' or 'no': ")
+    
 if sneakIntoResturant == "yes":
-   typingPrint(dogName + " ran through the resturant and straight to the ktchen, she had to have a " + favoriteDessert + "!")
+    
+   print("\n")
+   typingPrint(dogName + " ran through the resturant and straight to the kitchen, she had to have a " + favoriteDessert + " !")
    typingPrint("One of the servers noticed " + dogName + " and put some of the delicous dessert on a plate for the dog to enjoy.")
-   typingPrint(dogName+ " loved it so much, she ate " + favoriteNumber + "!")
-   typingPrint("Unfortunately, some of the customers caught sight of the dog enjoying her dessert in the kitchen and it upset them, causing some of them to leave")
+   typingPrint(dogName+ " loved it so much, she ate " + favoriteNumber + " of them! ")
+   typingPrint("Unfortunately, some of the customers caught sight of the dog enjoying her dessert in the kitchen and it upset them, causing some of them to leave. ")
    typingPrint("One of the customers even called Animal Rescue to come pick the dog up and take her home. But they were too late. When they got to the returant, the dog was long gone. ")
 else: 
+   print("\n")
    typingPrint("The yorkie decided not to go into the resturant because she did not want to get her fur all dirty.")
 
 print("\n")
 
-typingPrint("After the resturant,"+ dogName + " finally makes it to the pet spa.")
-typingPrint("It was just as she pictures it! A cute little place with dogs like her relaxing and getting pampered!")
+typingPrint("After the resturant,"+ dogName + " finally makes it to the pet spa. ")
+typingPrint("It was just as she pictured it! A cute little place with dogs like her relaxing and getting pampered! ")
 typingPrint(dogName +" was so excited to get here, she forgot to decide what service she even wanted done. A massage? A pawicure?")
 
 print("\n")
 
 nailService= input("Should she get a pawicure or a massage? Type 'P' or 'M': ")
+while(len(nailService) ==0):
+    nailService = input("Whoops. I don't think I got that. Please type 'P' or 'M': ")
 
 if nailService.upper() == 'P':
     
@@ -128,7 +138,10 @@ else:
     typingPrint(" The massage was so relaxing, " + dogName + " fell asleep. She woke up in a jolt and ran home as fast as could. ")
     typingPrint("She had to hurry run home before her owner got back.")
 
-Method= input("Should the yorkie run home or stay at the salon? Type 'R' or 'S': ")
+Method = input("Should the yorkie run home or stay at the salon? Type 'R' or 'S': ")
+while(len(Method) ==0):
+    Method = input("Whoops. I don't think I got that. Please type 'R' or 'S': ")
+
     
 if nailService.upper() == 'P' and  Method == 'S':
    
@@ -152,8 +165,9 @@ else:
    typingPrint("Lucky for her, she got home just in time! ")
    print("\n")
    typingPrint(dogName + " was already snugged up in bed when " + userName + " opened the front door. ")
-   typingPrint("'That was close' " + dogName + " thought. As their owner came closer to greet them. ")
-   typingPrint( userName + " looked at the dog and said, 'Hmmmm, something smells like......nail polish.' ")
+   typingPrint("'That was close', " + dogName + " thought. As her owner came closer to greet her. ")
+   typingPrint( userName + " looked at her and said, 'Hmmmm, someone smells like......nail polish.' ")
+   print("\n")
    typingPrint("BUSTED!")
    
 print("\n")
