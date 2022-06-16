@@ -86,6 +86,8 @@ typingPrint(favoriteDessert + "s being made. 'Yummmmm', She thought as she ran t
 
 sneakIntoResturant = input("Should " + str(dogName) + " sneak into the resturant ? Type yes or no: ")
 
+typingPrint("\n")
+
 if sneakIntoResturant == "yes":
    typingPrint(dogName + " ran through the resturant and straight to the ktchen, she had to have a " + favoriteDessert + "!")
    typingPrint("One of the servers noticed " + dogName + " and put some of the delicous dessert on a plate for the dog to enjoy.")
@@ -104,7 +106,9 @@ typingPrint(dogName +" was so excited to get here, she forgot to decide what ser
 NailService= input("Should she get a pawicure or a massage? Type P or M:")
 
 if NailService == 'P':
+    
    typingPrint("\n)
+               
    typingPrint("Eventually, She decides on a pawicure and gets a glossy coat of pink nail polish on her paws. The yorkie was having so much fun, she forgot she had to be home by 10:00pm!")
    typingPrint("After spending a day in " + majorCity +", " + dogName + " decided she could'nt run home before " + userName + " got back, because ")
    typingPrint("she would mess up her nails.")
@@ -115,4 +119,6 @@ else:
     typingPrint("The massage was so relaxing, she fell asleep "+ dogName + ". She had to run home before her owner got back.")
     typingPrint("Lucky for her, she got home just in time")
 
+    print("\n")
+    print("\n")
 print("------------ The End--------------")
