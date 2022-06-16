@@ -100,7 +100,7 @@ typingPrint(favoriteDessert + "s being made.'Yummmmm', She thought as she ran to
 print("\n")
 
 sneakIntoResturant = input("Should " + str(dogName) + " sneak into the resturant ? Type 'yes' or 'no': ")
-while(len(sneakIntoResturant) ==0):
+while sneakIntoResturant.lower() != "yes" and sneakIntoResturant.lower() != "no":
     sneakIntoResturant = input("Whoops. I don't think I got that. Please type 'yes' or 'no': ")
     
 if sneakIntoResturant == "yes":
@@ -124,7 +124,7 @@ typingPrint(dogName +" was so excited to get here, she forgot to decide what ser
 print("\n")
 
 nailService= input("Should she get a pawicure or a massage? Type 'P' or 'M': ")
-while(len(nailService) ==0):
+while nailService.lower() != "P" and nailService.lower() != "M":
     nailService = input("Whoops. I don't think I got that. Please type 'P' or 'M': ")
 
 if nailService.upper() == 'P':
@@ -139,7 +139,7 @@ else:
     typingPrint("She had to hurry run home before her owner got back.")
 
 Method = input("Should the yorkie run home or stay at the salon? Type 'R' or 'S': ")
-while(len(Method) ==0):
+while Method.lower() != "R" and Method.lower() != "S":
     Method = input("Whoops. I don't think I got that. Please type 'R' or 'S': ")
 
     
