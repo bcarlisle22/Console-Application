@@ -13,7 +13,7 @@ def typingInput (text):
         sys.stdout.flush()
         time.sleep(0.09)
 
-typingPrint("Hey there! I have a super cute fun and interactive story to share with you! ")
+typingPrint("Hey there! I have a fun interactive story to share with you! ")
 typingPrint("First, I need to ask a few questions. ")
 typingPrint("This story is going to be based on you and a few of your favorite things. ")
 typingPrint("Don't forget, to submit your reply, simply press 'enter.' Let's get started! ")
