@@ -1,6 +1,6 @@
-print("Hey there! I have a super cute fun and interactive story to share with you!")
+print("Hey there! I have a super cute fun and interactive story to share with you! ")
 print("First, I need to ask a few questions. ")
-print("This story is going to be based on you and a few of your favorite things")
+print("This story is going to be based on you and a few of your favorite things. ")
 print("Don't forget, to submit your reply, simply press 'enter.' Let's get started! ")
 
 print("\n")
