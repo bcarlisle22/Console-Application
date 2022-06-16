@@ -163,7 +163,7 @@ if nailService.upper() == 'P' and  Method == 'S':
 elif nailService == "P" and Method == "R":
     typingPrint(dogName + " decided to try to run home anyways. She was a block away from her home when Animal Rescue spotted her and started chasing her. ")
     typingPrint("She ran into her front yard just as " + userName + " pulled into the driveway.")
-    typingPrint(userName + " spotted Animal rescue chancing " + dogName + " . )
+    typingPrint(userName + " spotted Animal rescue chancing " + dogName + " . ")
     typingPrint("'Hey! This is my dog! '" + userName + " said. Animal Rescue apologized and promptly left.")
     typingPrint("The dog and her owner went inside the house.")
     typingPrint("That's the first and last time " + dogName + " is going to leave the house without her owner. ")
