@@ -124,11 +124,11 @@ typingPrint(dogName +" was so excited to get here, she forgot to decide what ser
 
 print("\n")
 
-nailService= input("Should she get a pawicure or a massage? Type 'P' or 'M': ")
-while nailService.upper() != "P" and nailService.upper() != "M":
-    nailService = input("Whoops. I don't think I got that. Please type 'P' or 'M': ")
+nailService= input("Should she get a pawicure or a massage? Type 'p' or 'm': ")
+while nailService.lower() != "p" and nailService.upper() != "m":
+    nailService = input("Whoops. I don't think I got that. Please type 'p' or 'm': ")
 
-if nailService.upper() == 'P':
+if nailService.lower() == 'p':
     
    print("\n")
                
@@ -139,12 +139,12 @@ else:
     typingPrint(" The massage was so relaxing, " + dogName + " fell asleep. She woke up in a jolt and ran home as fast as could. ")
     typingPrint("She had to hurry run home before her owner got back.")
 
-Method = input("Should the yorkie run home or stay at the salon? Type 'R' or 'S': ")
-while Method.upper() != "R" and Method.upper() != "S":
-    Method = input("Whoops. I don't think I got that. Please type 'R' or 'S': ")
+Method = input("Should the yorkie run home or stay at the salon? Type 'r' or 's': ")
+while Method.lower() != "r" and Method.upper() != "S":
+    Method = input("Whoops. I don't think I got that. Please type 'r' or 's': ")
 
     
-if nailService.upper() == 'P' and  Method == 'S':
+if nailService.lower() == 'p' and  Method == 's':
    
    print("\n")
    
@@ -164,7 +164,7 @@ elif nailService == "P" and Method == "R":
     typingPrint(dogName + " decided to try to run home anyways. She was a block away from her home when Animal Rescue spotted her and started chasing her. ")
     typingPrint("She ran into her front yard just as " + userName + " pulled into the driveway.")
     typingPrint(userName + " spotted Animal rescue chancing " + dogName + " . ")
-    typingPrint("'Hey! This is my dog! '" + userName + " said. Animal Rescue apologized and promptly left.")
+    typingPrint("'Hey! This is my dog! '" + userName + " said. Animal Rescue apologized and promptly left. ")
     typingPrint("The dog and her owner went inside the house.")
     typingPrint("That's the first and last time " + dogName + " is going to leave the house without her owner. ")
 else: 
