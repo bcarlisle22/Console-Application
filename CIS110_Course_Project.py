@@ -14,8 +14,8 @@ def typingInput (text):
         time.sleep(0.06)
 
         
-keepGoing="yes"
-while keepGoing.lower()== "yes":
+keepGoing="y"
+while keepGoing.lower()== "y":
 
 typingPrint("Hey there! I have a fun interactive story to share with you! ")
 typingPrint("First, I need to ask a few questions. ")
@@ -195,5 +195,7 @@ print("\n")
 print("\n")
 print("\n")
 print("\n")
+
+keepGoing=input( "Do you want to play again? Please enter y or n : ")
 else:
     typingPrint("See you next time!")
