@@ -25,60 +25,62 @@ print("\n")
 typingPrint("This story is going to be based on you and a few of your favorite things. ")
 typingPrint("Don't forget, to submit your reply, simply press 'enter'. ")
 
-typingPrint("\n")
+print("\n")
 
 
 typingPrint("Let's get started!")
 
-typingPrint("\n")
+print("\n")
+
 
 input("Press 'enter' to continue ")
 
-typingPrint("\n")
+print("\n")
+
 
 userName= input ('What is your name?  ')
 while(len(userName) == 0):
     userName = input("Whoops. I don't think I got that. Please enter your name: ")
 
-typingPrint("\n")
+print("\n")
 
 if userName.lower() == "brianna": 
    typingPrint(userName + "? I love that name! ")
 else:
-   typingPrint("Hello, " + userName + " Nice to meet you!")
+   typingPrint("Hello, " + userName + " . Nice to meet you!")
 
-typingPrint("\n")
+print("\n")
 
 dogName=input ("Chose a name for the yorkie:  ")
 while(len(dogName) == 0):
     dogName = input("Whoops. I don't think I got that. Enter a name: ")
 
-typingPrint("\n")
+print("\n")
 
 majorCity=input ("What is your favorite major city?  ")
 while(len(majorCity) == 0):
     majorCity = input("Whoops. I don't think I got that. Enter a city name: ")
 
-typingPrint("\n")
+print("\n")
 
 resturantName= input ("What is the name of your favorite resturant? ")
 while(len(resturantName) == 0):
     resturantName = input ("Whoops. I don't think I got that. Enter a resturant name: ")
 
-typingPrint("\n")
+print("\n")
 
 favoriteDessert=input ("What is your favorite dessert?  ")
 while(len(favoriteDessert) == 0):
     favoriteDessert = input ("Whoops. I don't think I got that. Enter a dessert: ")
 
-typingPrint("\n")
+print("\n")
 
 favoriteNumber=input ("What is your favorite number?  ")
 while not favoriteNumber.isdigit():
     favoriteNumber = input("Whoops. I don't think I got that. Enter your favorite number: ")
 
 
-typingPrint("\n")
+print("\n")
 
 typingPrint("Let's start the story! ")
 
@@ -89,7 +91,7 @@ print("\n")
 
 typingPrint("This is a story about a yorkie named " + dogName +". ")
 
-typingPrint("\n")
+print("\n")
 
 typingPrint(dogName + " was left alone for a night while her owner, " +  userName + ", went out.")
 print("\n")
@@ -129,7 +131,7 @@ typingPrint(dogName +" was so excited to get here, she forgot to decide what ser
 print("\n")
 
 nailService= input("Should she get a pawicure or a massage? Type 'p' or 'm': ")
-while nailService.lower() != "p" and nailService.upper() != "m":
+while nailService.lower() != "p" and nailService.lower() != "m":
     nailService = input("Whoops. I don't think I got that. Please type 'p' or 'm': ")
 
 if nailService.lower() == 'p':
@@ -143,12 +145,14 @@ else:
     typingPrint(" The massage was so relaxing, " + dogName + " fell asleep. She woke up in a jolt and ran home as fast as could. ")
     typingPrint("She had to hurry run home before her owner got back.")
 
+  print("\n")
+
 Method = input("Should the yorkie run home or stay at the salon? Type 'r' or 's': ")
-while Method.lower() != "r" and Method.upper() != "S":
+while Method.lower() != "r" and Method.lower() != "S":
     Method = input("Whoops. I don't think I got that. Please type 'r' or 's': ")
 
     
-if nailService.lower() == 'p' and  Method == 's':
+if nailService.lower() == 'p' and  Method.lower() == 's':
    
    print("\n")
    
@@ -164,7 +168,7 @@ if nailService.lower() == 'p' and  Method == 's':
    print("\n")
    typingPrint(userName+ " explained it to her on the way home. ")
    typingPrint("The silly dog didn't need to sneak out to the spa because her owner was going to suprise her with a trip to the spa the next day.")
-elif nailService == "P" and Method == "R":
+elif nailService == "p" and Method == "r":
     typingPrint(dogName + " decided to try to run home anyways. She was a block away from her home when Animal Rescue spotted her and started chasing her. ")
     typingPrint("She ran into her front yard just as " + userName + " pulled into the driveway.")
     typingPrint(userName + " spotted Animal rescue chancing " + dogName + " . ")
@@ -199,3 +203,9 @@ print("\n")
 keepGoing=input( "Do you want to play again? Please enter y or n : ")
 else:
     typingPrint("See you next time!")
+    
+
+
+      
+    
+    
