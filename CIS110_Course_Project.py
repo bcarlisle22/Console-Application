@@ -148,7 +148,7 @@ else:
   print("\n")
 
 Method = input("Should the yorkie run home or stay at the salon? Type 'r' or 's': ")
-while Method.lower() != "r" and Method.lower() != "S":
+while Method.lower() != "r" and Method.lower() != "s":
     Method = input("Whoops. I don't think I got that. Please type 'r' or 's': ")
 
     
