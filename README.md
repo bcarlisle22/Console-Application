@@ -1,2 +1,2 @@
-# User-input-driven-course-project
+# Yandering Yorkie
 ![](yonderingyorkie.jpeg)
