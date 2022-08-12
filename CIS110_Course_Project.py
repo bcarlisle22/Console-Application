@@ -6,9 +6,6 @@ def typingPrint (text):
         time.sleep(0.06)
 
         
-keepGoing="y"
-while keepGoing.lower()== "y":
-
 typingPrint("Hey there! I have a fun interactive story to share with you! ")
 typingPrint("First, I need to ask a few questions. ")
 
@@ -137,7 +134,7 @@ else:
     typingPrint(" The massage was so relaxing, " + dogName + " fell asleep. She woke up in a jolt and ran home as fast as could. ")
     typingPrint("She had to hurry run home before her owner got back.")
 
-  print("\n")
+print("\n")
 
 Method = input("Should the yorkie run home or stay at the salon? Type 'r' or 's': ")
 while Method.lower() != "r" and Method.lower() != "s":
@@ -192,12 +189,6 @@ print("\n")
 print("\n")
 print("\n")
 
-keepGoing=input( "Do you want to play again? Please enter y or n : ")
-else:
-    typingPrint("See you next time!")
+typingPrint("See you next time!")
     
 
-
-      
-    
-    
